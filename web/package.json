@@ -14,15 +14,17 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
+    "tailwindcss": "^1.1.4",
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "npm run tailwind:css && react-scripts start",
+    "tailwind:css": "tailwind build src/tailwind.css -c tailwind.config.js -o src/index.css",
+    "build": "npm run tailwind:css && react-scripts build",
     "test": "react-scripts test",
     "deploy": "npm run build && firebase deploy",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "npm run tailwind:css && start-storybook -p 9009 -s public",
+    "build-storybook": "npm run tailwind:css && build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,26 +1,22 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./app.css";
+import { ProfileFactory } from "./components/profile";
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export const AppFactory = () => {
+  const profile = ProfileFactory({
+    title: "Web developer",
+    name: "Marcus Rådell",
+    imageUrl:
+      "https://pbs.twimg.com/profile_images/1182702044395778049/KT2I-JrX_400x400.jpg"
+  });
+
+  const view: React.FC = () => (
+    <div className="h-screen w-screen">
+      <profile.view />
     </div>
   );
-};
 
-export default App;
+  return {
+    view
+  };
+};
