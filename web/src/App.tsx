@@ -11,7 +11,15 @@ export const AppFactory = () => {
   });
 
   const view: React.FC = () => (
-    <div className="h-screen w-screen">
+    <div
+      style={{
+        display: "flex",
+        height: "100vh",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center"
+      }}
+    >
       <profile.View />
     </div>
   );
