@@ -12,7 +12,7 @@ export const AppFactory = () => {
 
   const view: React.FC = () => (
     <div className="h-screen w-screen">
-      <profile.view />
+      <profile.View />
     </div>
   );
 

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import styles from "./profile.module.css";
 
 export type ProfileFactoryProps = {
   name: string;
@@ -6,22 +7,41 @@ export type ProfileFactoryProps = {
   imageUrl: string;
 };
 
+const openBody = styles.body;
+const closedBody = [styles.body, styles.body_collapsed].join(" ");
+
 export const ProfileFactory = (p: ProfileFactoryProps) => {
-  const view: React.FC = () => (
-    <div className="max-w-sm  rounded-lg overflow-hidden shadow-xl bg-green-800 px-5 justify-center flex">
-      <div>
-        <h1 className="text-gray-100 text-xl">{p.title}</h1>
-        <img
-          className="h-24 w-24 rounded-full"
-          src={p.imageUrl}
-          alt="profile image"
-        />
-        <h2 className="text-gray-100 text-lg">{p.name}</h2>
+  const View: React.FC = () => {
+    const [open, toggleOpen] = useState(true);
+
+    return (
+      <div className={styles.card}>
+        <div className={styles.top}>
+          <h1 className={styles.heading}>{p.title}</h1>
+        </div>
+
+        <div className={open ? openBody : closedBody}>
+          <img className={styles.image} src={p.imageUrl} alt="profile image" />
+          <div className={styles.data}>
+            <div className={styles.data_row}>+10 years</div>
+            <div className={styles.data_row}>JavaScript fullstack</div>
+            <div className={styles.data_row}>Programming mentor</div>
+            <div className={styles.data_row}>RxJS, TypeScript</div>
+          </div>
+        </div>
+        <div
+          className={styles.bottom}
+          onClick={() => {
+            toggleOpen(!open);
+          }}
+        >
+          <h2 className={styles.heading}>{p.name}</h2>
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   return {
-    view
+    View
   };
 };

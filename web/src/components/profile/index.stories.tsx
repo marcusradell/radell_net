@@ -11,7 +11,7 @@ const profile = ProfileFactory({
 
 export default {
   title: "profile",
-  component: profile.view
+  component: profile.View
 };
 
-export const ProfileView = () => <profile.view />;
+export const ProfileView = () => <profile.View />;
