@@ -15,6 +15,13 @@ export type Profile = {
 
 export type ProfileFactory = (p: Props) => Profile;
 
+const copy = (e: React.MouseEvent<HTMLInputElement, MouseEvent>) => {
+  e.currentTarget.select();
+  document.execCommand("copy");
+  e.currentTarget.focus();
+  alert("Copied to clipboard.");
+};
+
 export const profileFactory: ProfileFactory = p => {
   const section = sectionFactory({ title: p.title });
 
@@ -39,26 +46,26 @@ export const profileFactory: ProfileFactory = p => {
               <li>Microservices</li>
               <li>RxJs</li>
               <li>TypeScript</li>
-              <li>Lean | Agile | XP</li>
+              <li>Lean|Agile|XP</li>
             </ul>
           </div>
           <div className={styles.contact}>
             {/* TODO: Add copy button. */}
-            <div>
-              <a
+            <div className={styles.copy}>
+              <input
+                onClick={copy}
                 className={`${styles.email} ${styles.copy}`}
-                href="mailto:marcus@radell.net"
-              >
-                marcus@radell.net
-              </a>
+                value="marcus@radell.net"
+                readOnly
+              />
             </div>
-            <div>
-              <a
+            <div className={styles.copy}>
+              <input
+                onClick={copy}
                 className={`${styles.phone} ${styles.copy}`}
-                href="tel:+46725223325"
-              >
-                +46(0)725 22 33 25
-              </a>
+                value="+46725223325"
+                readOnly
+              />
             </div>
             <iframe
               className={styles.map}

@@ -65,7 +65,6 @@
 }
 
 .contact {
-  margin-top: 30px;
   font-family: "Strait", sans-serif;
   text-align: center;
   font-size: 30px;
@@ -74,39 +73,48 @@
 
 .email {
   display: block;
-  margin: 20px 0;
-  position: relative;
+  margin: 20px auto;
+  font-family: "Strait", sans-serif;
+  font-size: 20px;
+  width: 200px;
+  text-align: left;
 }
 
 .phone {
   display: block;
-  margin: 20px 0;
+  margin: 20px auto;
+  font-family: "Strait", sans-serif;
+  font-size: 20px;
+  width: 200px;
+  text-align: left;
+}
+
+.copy {
   position: relative;
 }
 
-/* TODO: Implement. */
-/* 
 .copy::before {
   content: "";
   display: block;
-  width: 25px;
-  height: 25px;
-  border: 3px solid black;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
   position: absolute;
   bottom: 5px;
-  right: 5px;
+  right: 55px;
+  z-index: 10;
 }
 
 .copy::after {
   content: "";
   display: block;
-  width: 25px;
-  height: 25px;
-  border: 3px solid black;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
   position: absolute;
-  bottom: -2px;
-  right: -2px;
-} */
+  bottom: 10px;
+  right: 60px;
+}
 
 .map {
   display: block;
