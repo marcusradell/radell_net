@@ -4,19 +4,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  padding: 10px;
 }
 
 .body {
   width: 100%;
-  min-height: 200px;
-  height: 200px;
   display: flex;
   overflow: hidden;
 }
 
 .image_container {
   position: relative;
+  margin-bottom: 15px;
 }
 
 .image {
@@ -29,8 +28,8 @@
 }
 
 .years {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   border: 1px solid black;
   border-radius: 50%;
   background: #fdd83c;
@@ -40,6 +39,8 @@
   position: absolute;
   top: 10px;
   right: 0;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 24px;
 }
 
 .language {
@@ -54,6 +55,7 @@
 }
 
 .data {
+  font-family: "Strait", sans-serif;
   width: 150px;
   margin: 15px;
   font-size: 18px;
@@ -62,6 +64,54 @@
   justify-content: space-around;
 }
 
-.data_row {
-  margin: 5px;
+.contact {
+  margin-top: 30px;
+  font-family: "Strait", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+}
+
+.email {
+  display: block;
+  margin: 20px 0;
+  position: relative;
+}
+
+.phone {
+  display: block;
+  margin: 20px 0;
+  position: relative;
+}
+
+/* TODO: Implement. */
+/* 
+.copy::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 3px solid black;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.copy::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 3px solid black;
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+} */
+
+.map {
+  display: block;
+  height: 300px;
+  width: 100%;
+  border: 0;
+  margin: 20px 0;
 }

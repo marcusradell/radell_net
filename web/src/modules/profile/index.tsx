@@ -35,12 +35,35 @@ export const profileFactory: ProfileFactory = p => {
               <JsLogo className={styles.language} />
             </div>
             <ul className={styles.data}>
-              <li>Mentor</li>
               <li>Modular code</li>
+              <li>Microservices</li>
               <li>RxJs</li>
               <li>TypeScript</li>
-              <li>Microservices</li>
+              <li>Lean | Agile | XP</li>
             </ul>
+          </div>
+          <div className={styles.contact}>
+            {/* TODO: Add copy button. */}
+            <div>
+              <a
+                className={`${styles.email} ${styles.copy}`}
+                href="mailto:marcus@radell.net"
+              >
+                marcus@radell.net
+              </a>
+            </div>
+            <div>
+              <a
+                className={`${styles.phone} ${styles.copy}`}
+                href="tel:+46725223325"
+              >
+                +46(0)725 22 33 25
+              </a>
+            </div>
+            <iframe
+              className={styles.map}
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8127.6253882109395!2d17.939105254748615!3d59.384589884680366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9e64729983f5%3A0xfa06aa049b048117!2sStora%20Ursvik%2C%20174%2062%20Sundbyberg!5e0!3m2!1sen!2sse!4v1576247169733!5m2!1sen!2sse"
+            ></iframe>
           </div>
         </div>
       </>
