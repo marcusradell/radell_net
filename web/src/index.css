@@ -40,3 +40,8 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+#root {
+  position: relative;
+  overflow: hidden;
+}
