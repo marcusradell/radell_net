@@ -44,7 +44,7 @@ export const profileFactory: ProfileFactory = p => {
             <ul className={styles.data}>
               <li>Modular code</li>
               <li>Microservices</li>
-              <li>RxJs</li>
+              <li>RxJS</li>
               <li>TypeScript</li>
               <li>Lean|Agile|XP</li>
             </ul>
