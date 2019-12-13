@@ -94,6 +94,7 @@
 }
 
 .copy::before {
+  pointer-events: none;
   content: "";
   display: block;
   width: 15px;
@@ -106,6 +107,7 @@
 }
 
 .copy::after {
+  pointer-events: none;
   content: "";
   display: block;
   width: 15px;
