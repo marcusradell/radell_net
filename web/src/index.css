@@ -1,7 +1,22 @@
 @import-normalize; /* bring in normalize.css styles */
 
+/* Available fonts
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Shadows Into Light", cursive;
+  font-family: "Sigmar One", cursive; */
+
 body {
-  background: lightgray;
+  background: darkgrey;
   margin: 0;
   padding: 0;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
 }

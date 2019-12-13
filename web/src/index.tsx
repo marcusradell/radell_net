@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import { AppFactory } from "./app";
+import { appFactory } from "./modules/app";
 import * as serviceWorker from "./serviceWorker";
 
-const app = AppFactory();
+const app = appFactory();
 
 ReactDOM.render(<app.view />, document.getElementById("root"));
 
