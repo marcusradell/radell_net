@@ -4,13 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
 }
 
 .body {
   width: 100%;
   display: flex;
-  overflow: hidden;
+  align-content: space-between;
 }
 
 .image_container {
@@ -45,7 +44,7 @@
 
 .language {
   position: absolute;
-  top: 110px;
+  top: 100px;
   left: 55px;
   background: black;
   border: 2px solid black;
@@ -57,7 +56,8 @@
 .data {
   font-family: "Strait", sans-serif;
   width: 150px;
-  margin: 15px;
+  margin-left: 5px;
+  padding-left: 20px;
   font-size: 18px;
   display: flex;
   flex-direction: column;
@@ -78,6 +78,9 @@
   font-size: 20px;
   width: 200px;
   text-align: left;
+  cursor: pointer;
+  border: 3px solid black;
+  padding: 5px;
 }
 
 .phone {
@@ -87,6 +90,9 @@
   font-size: 20px;
   width: 200px;
   text-align: left;
+  cursor: pointer;
+  border: 3px solid black;
+  padding: 5px;
 }
 
 .copy {
@@ -101,9 +107,10 @@
   height: 15px;
   border: 2px solid black;
   position: absolute;
-  bottom: 5px;
-  right: 55px;
+  bottom: 10px;
+  right: 60px;
   z-index: 10;
+  transition: all 1s;
 }
 
 .copy::after {
@@ -114,8 +121,8 @@
   height: 15px;
   border: 2px solid darkgrey;
   position: absolute;
-  bottom: 10px;
-  right: 60px;
+  bottom: 15px;
+  right: 65px;
 }
 
 .map {
@@ -123,5 +130,4 @@
   height: 300px;
   width: 100%;
   border: 0;
-  margin: 20px 0;
 }
