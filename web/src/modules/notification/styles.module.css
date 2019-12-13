@@ -1,0 +1,32 @@
+.notification {
+  position: absolute;
+  left: calc(50vw - 125px);
+  bottom: -255px;
+  z-index: 100;
+  text-align: center;
+  background: rgb(98, 31, 65);
+  background: linear-gradient(
+    90deg,
+    rgba(98, 31, 65, 1) 0%,
+    rgba(131, 12, 71, 1) 100%
+  );
+  color: white;
+  width: 250px;
+  height: 250px;
+  border-radius: 50% 50% 0 50%;
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px black;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 30px;
+  overflow: hidden;
+  padding: 5px;
+  transition: bottom 0.4s ease-out;
+}
+
+.notification.visible {
+  transition: bottom 0.4s ease-out;
+  bottom: 50px;
+}

@@ -7,6 +7,7 @@ export type Props = {
   name: string;
   title: string;
   imageUrl: string;
+  notify: (m: string) => void;
 };
 
 export type Profile = {
@@ -15,14 +16,14 @@ export type Profile = {
 
 export type ProfileFactory = (p: Props) => Profile;
 
-const copy = (e: React.MouseEvent<HTMLInputElement, MouseEvent>) => {
-  e.currentTarget.select();
-  document.execCommand("copy");
-  e.currentTarget.focus();
-  alert("Copied to clipboard.");
-};
-
 export const profileFactory: ProfileFactory = p => {
+  const copy = (e: React.MouseEvent<HTMLInputElement, MouseEvent>) => {
+    e.currentTarget.select();
+    document.execCommand("copy");
+    e.currentTarget.focus();
+    p.notify("Copied to clipboard.");
+  };
+
   const section = sectionFactory({ title: p.title });
 
   const View = () => {
