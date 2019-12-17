@@ -13,7 +13,7 @@ export const appFactory = () => {
     name: "Marcus Rådell",
     imageUrl:
       "https://pbs.twimg.com/profile_images/1182702044395778049/KT2I-JrX_400x400.jpg",
-    notify: notification.actions.notify
+    notify: notification.actions.notify.act
   });
 
   const view: React.FC = () => (

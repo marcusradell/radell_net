@@ -30,3 +30,9 @@
   transition: bottom 0.4s ease-out;
   bottom: 50px;
 }
+
+.countdown {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
