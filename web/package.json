@@ -15,6 +15,7 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
     "rx-machine": "^2.1.1",
+    "rxjs": "^7.0.0-alpha.0",
     "source-map-explorer": "^2.1.2",
     "typescript": "~3.7.2"
   },
