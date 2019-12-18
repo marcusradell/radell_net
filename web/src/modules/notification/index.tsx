@@ -19,7 +19,9 @@ export const notificationFactory: NotificationFactory = () => {
     const [state, setState] = useState(0);
 
     useEffect(() => {
-      animationStream.forEach(n => setState(n));
+      const sub = animationStream.subscribe(n => setState(n));
+
+      return () => sub.unsubscribe();
     }, []);
 
     return (
