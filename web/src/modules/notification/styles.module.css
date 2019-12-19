@@ -1,7 +1,13 @@
+:root {
+  --bottom: -255px;
+  --opacity: 1;
+}
+
 .notification {
+  opacity: var(--opacity);
   position: absolute;
   left: calc(50vw - 125px);
-  bottom: -255px;
+  bottom: var(--bottom);
   z-index: 100;
   text-align: center;
   background: rgb(98, 31, 65);
@@ -23,12 +29,12 @@
   font-size: 30px;
   overflow: hidden;
   padding: 5px;
-  transition: bottom 0.4s ease-out;
+  /* transition: bottom 0.4s ease-out; */
 }
 
 .notification.visible {
-  transition: bottom 0.4s ease-out;
-  bottom: 50px;
+  /* transition: bottom 0.4s ease-out; */
+  /* bottom: 50px; */
 }
 
 .countdown {

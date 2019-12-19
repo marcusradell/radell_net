@@ -5,10 +5,21 @@ import {
   takeUntil,
   take,
   map,
-  startWith
+  startWith,
+  tap,
+  concatAll,
+  filter
 } from "rxjs/operators";
-import { of, merge, interval } from "rxjs";
+import {
+  of,
+  merge,
+  interval,
+  scheduled,
+  animationFrameScheduler,
+  defer
+} from "rxjs";
 import { animationFrame } from "rxjs/internal/scheduler/animationFrame";
+import { tween } from "../../tween";
 
 export type VisibleStore = {
   state: "visible";
@@ -82,13 +93,57 @@ export const createModel = () => {
     actions
   );
 
+  // const animationStream = notify.stream.pipe(
+  //   switchMap(() =>
+  //     interval(1000, animationFrame).pipe(
+  //       map(v => 2 - v),
+  //       startWith(3),
+  //       take(4)
+  //     )
+  //   )
+  // );
+
+  let pos = -255;
+
+  document.body.style.setProperty("--bottom", `${pos}px`);
+
   const animationStream = notify.stream.pipe(
     switchMap(() =>
-      interval(1000, animationFrame).pipe(
-        map(v => 2 - v),
-        startWith(3),
-        take(4)
-      )
+      scheduled(
+        [
+          of(1).pipe(
+            tap(o => {
+              document.body.style.setProperty("--opacity", o.toString(10));
+            })
+          ),
+          defer(() =>
+            tween(pos, 50, 400).pipe(
+              tap(p => {
+                document.body.style.setProperty("--bottom", `${p}px`);
+                pos = p;
+              }),
+              filter(() => false)
+            )
+          ),
+          tween(3, 0, 3000).pipe(map(n => Math.ceil(n))),
+          tween(1, 0.25, 1000).pipe(
+            tap(o => {
+              document.body.style.setProperty("--opacity", o.toString(10));
+            }),
+            filter(() => false)
+          ),
+          defer(() =>
+            tween(pos, -255, 400).pipe(
+              tap(p => {
+                document.body.style.setProperty("--bottom", `${p}px`);
+                pos = p;
+              }),
+              filter(() => false)
+            )
+          )
+        ],
+        animationFrameScheduler
+      ).pipe(concatAll())
     )
   );
 
