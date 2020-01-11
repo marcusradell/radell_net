@@ -2,10 +2,12 @@ import React from "react";
 import styles from "./styles.module.css";
 import { profileFactory } from "../profile";
 import { notificationFactory } from "../notification";
+import { cvFactory } from "../cv";
 
 export const appFactory = () => {
   const notification = notificationFactory();
 
+  // Open the console to call the actions manually.
   (window as any).actions = notification.actions;
 
   const profile = profileFactory({
@@ -16,11 +18,14 @@ export const appFactory = () => {
     notify: notification.actions.notify.act
   });
 
+  const cv = cvFactory();
+
   const view: React.FC = () => (
     <>
       <notification.View />
       <div className={styles.app}>
         <profile.View />
+        <cv.View />
       </div>
     </>
   );

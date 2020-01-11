@@ -3,22 +3,12 @@ import {
   delay,
   switchMap,
   takeUntil,
-  take,
   map,
-  startWith,
   tap,
   concatAll,
   filter
 } from "rxjs/operators";
-import {
-  of,
-  merge,
-  interval,
-  scheduled,
-  animationFrameScheduler,
-  defer
-} from "rxjs";
-import { animationFrame } from "rxjs/internal/scheduler/animationFrame";
+import { of, merge, scheduled, animationFrameScheduler, defer } from "rxjs";
 import { tween } from "../../tween";
 
 export type VisibleStore = {

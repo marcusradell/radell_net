@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
-import { sectionFactory } from "../section";
+import { Title } from "../views/title";
+import { Card } from "../views/card";
 import { ReactComponent as JsLogo } from "./js-logo.svg";
 
 export type Props = {
@@ -24,14 +25,12 @@ export const profileFactory: ProfileFactory = p => {
     p.notify("Copied to clipboard.");
   };
 
-  const section = sectionFactory({ title: p.title });
-
   const View = () => {
     return (
       <>
-        <section.View />
+        <Title title={p.title} />
 
-        <div className={styles.card}>
+        <Card>
           <div className={styles.body}>
             <div className={styles.image_container}>
               <img className={styles.image} src={p.imageUrl} alt="profile" />
@@ -47,7 +46,6 @@ export const profileFactory: ProfileFactory = p => {
             </ul>
           </div>
           <div className={styles.contact}>
-            {/* TODO: Add copy button. */}
             <div className={styles.copy}>
               <input
                 onClick={copy}
@@ -70,7 +68,7 @@ export const profileFactory: ProfileFactory = p => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8127.6253882109395!2d17.939105254748615!3d59.384589884680366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9e64729983f5%3A0xfa06aa049b048117!2sStora%20Ursvik%2C%20174%2062%20Sundbyberg!5e0!3m2!1sen!2sse!4v1576247169733!5m2!1sen!2sse"
             ></iframe>
           </div>
-        </div>
+        </Card>
       </>
     );
   };

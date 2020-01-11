@@ -9,12 +9,13 @@ body {
   background: rgb(2, 0, 36);
   background: linear-gradient(
     0deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(57, 92, 99, 1) 50%,
+    rgba(168, 103, 50, 1) 0%,
+    rgba(168, 103, 157, 1) 50%,
     rgba(103, 157, 168, 1) 100%
   );
   margin: 0;
   padding: 0;
+
   font-family: "Fira Sans", sans-serif;
   font-size: 18px;
   color: black;
