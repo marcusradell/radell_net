@@ -105,6 +105,7 @@ li.tag {
   cursor: pointer;
   width: 300px;
   box-shadow: 3px 3px 3px black;
+  color: black;
   background: rgba(253, 216, 60, 1);
 }
 
