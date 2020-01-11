@@ -6,9 +6,9 @@ type DataRow = {
   short_description: string;
   highlights: string[];
   tags: TextAndPriority[];
-  date: {
-    from: string;
-    to: string;
+  dates: {
+    from: [number, number];
+    to: [number, number];
   };
 };
 
@@ -49,9 +49,9 @@ export const data: DataRow[] = [
       ["rabbitmq", 2],
       ["google_pubsub", 1]
     ],
-    date: {
-      from: "2017-09-01",
-      to: "2019-10-01"
+    dates: {
+      from: [2017, 9],
+      to: [2019, 10]
     }
   }
 ];

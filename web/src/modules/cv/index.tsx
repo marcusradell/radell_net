@@ -8,6 +8,7 @@ import { ShortDescription } from "./views/short-description";
 import { Tags } from "./views/tags";
 import { Highlights } from "./views/highlights";
 import s from "./styles.module.css";
+import { Dates } from "./views/dates";
 
 export type Cv = {
   View: React.FC;
@@ -26,7 +27,10 @@ export const cvFactory: CvFactory = () => {
               <Role role={row.role} />
               <ShortDescription shortDescription={row.short_description} />
               <Tags tags={row.tags} />
-              <Company company={row.company} />
+              <div className={s.labels}>
+                <Dates {...row.dates} />
+                <Company company={row.company} />
+              </div>
             </Card>
             <Highlights highlights={row.highlights} />
           </div>

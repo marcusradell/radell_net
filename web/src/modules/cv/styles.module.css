@@ -5,18 +5,10 @@
   text-align: center;
 }
 
-.company_wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: right;
-}
-
 .company {
   font-family: "Shadows Into Light", cursive;
+  height: 35px;
   font-size: 25px;
-  height: 30px;
-  margin-top: 15px;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -33,7 +25,7 @@
 .company::after {
   content: "";
   display: block;
-  height: 30px;
+  height: 35px;
   width: calc(100% + 25px);
   background: #fdd83c;
   position: absolute;
@@ -114,4 +106,39 @@ li.tag {
   width: 300px;
   box-shadow: 3px 3px 3px black;
   background: rgba(253, 216, 60, 1);
+}
+
+.labels {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dates {
+  font-size: 25px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.dates::before {
+  content: "";
+  display: block;
+  height: 35px;
+  width: calc(100% + 25px);
+  background: #fdd83c;
+  position: absolute;
+  box-shadow: 3px 3px 3px black;
+  z-index: -1;
+}
+
+.dates::after {
+  content: "⏰";
+  margin-left: 10px;
 }
