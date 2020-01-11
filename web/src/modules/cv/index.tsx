@@ -6,6 +6,7 @@ import { Card } from "../views/card";
 import { Company } from "./views/company";
 import { ShortDescription } from "./views/short-description";
 import { Tags } from "./views/tags";
+import { Highlights } from "./views/highlights";
 
 export type Cv = {
   View: React.FC;
@@ -21,8 +22,9 @@ export const cvFactory: CvFactory = () => {
         {data.map(row => (
           <Card>
             <Role role={row.role} />
-            <Tags tags={row.tags} />
             <ShortDescription shortDescription={row.short_description} />
+            <Tags tags={row.tags} />
+            <Highlights highlights={row.highlights} />
             <Company company={row.company} />
           </Card>
         ))}

@@ -5,15 +5,14 @@
 }
 
 .company {
-  font-family: "Strait", sans-serif;
-  font-size: 20px;
-
+  font-family: "Shadows Into Light", cursive;
+  font-size: 25px;
   height: 30px;
   margin-top: 15px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   position: relative;
   z-index: 1;
@@ -31,17 +30,29 @@
   width: calc(100% + 25px);
   background: #fdd83c;
   position: absolute;
-  box-shadow: 3px 3px 3px black;
+  box-shadow: 3px 0px 3px black;
   z-index: -1;
 }
 
 .role {
   font-family: "Strait", sans-serif;
   font-size: 30px;
+  padding: 5px;
+  background: white;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .short_description {
-  font-style: italic;
+  font-family: "Fira Sans", sans-serif;
+  padding: 10px;
+  text-align: justify;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  background: black;
+  color: white;
 }
 
 ul.tags {
@@ -49,7 +60,10 @@ ul.tags {
   list-style-type: none;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 15px;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 15px 0;
+  padding: 5px;
 }
 
 li.tag {
@@ -61,8 +75,20 @@ li.tag {
 
 .tag-1 {
   font-size: 20px;
+  padding: 3px;
+  background: rgba(253, 216, 60, 0.5);
+  box-shadow: 3px 3px 3px black;
 }
 
 .tag-2 {
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.highlights {
+  margin: 15px 10px;
+  text-align: justify;
+}
+
+.highlight {
+  margin: 15px 0;
 }
