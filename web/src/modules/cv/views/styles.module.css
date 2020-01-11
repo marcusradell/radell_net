@@ -1,6 +1,38 @@
+.company_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
 .company {
   font-family: "Strait", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
+
+  height: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.company::before {
+  content: "❤️";
+  margin-right: 10px;
+}
+
+.company::after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: calc(100% + 25px);
+  background: #fdd83c;
+  position: absolute;
+  box-shadow: 3px 3px 3px black;
+  z-index: -1;
 }
 
 .role {
@@ -10,4 +42,27 @@
 
 .short_description {
   font-style: italic;
+}
+
+ul.tags {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+li.tag {
+  list-style: none;
+  display: block;
+  font-family: "Strait", sans-serif;
+  margin: 5px;
+}
+
+.tag-1 {
+  font-size: 20px;
+}
+
+.tag-2 {
+  font-size: 14px;
 }

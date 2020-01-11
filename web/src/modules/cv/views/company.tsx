@@ -6,5 +6,7 @@ type Props = {
 };
 
 export const Company: React.FC<Props> = ({ company }) => (
-  <div className={s.company}>{company}</div>
+  <div className={s.company_wrapper}>
+    <div className={s.company}>{company}</div>
+  </div>
 );

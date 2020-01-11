@@ -2,13 +2,15 @@ import React from "react";
 import s from "./styles.module.css";
 
 type Props = {
-  tags: string[];
+  tags: Array<[string, number]>;
 };
 
 export const Tags: React.FC<Props> = ({ tags }) => (
-  <div className={s.tags}>
+  <ul className={s.tags}>
     {tags.map(tag => (
-      <div className={s.tag}>{tag.replace(/_/g, " ")}</div>
+      <li className={`${s.tag} ${s["tag-" + tag[1]]}`}>
+        {tag[0].replace(/_/g, " ")}
+      </li>
     ))}
-  </div>
+  </ul>
 );

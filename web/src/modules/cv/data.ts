@@ -1,6 +1,20 @@
-export const data = [
+type TextAndPriority = [string, number];
+
+type DataRow = {
+  role: string;
+  company: string;
+  short_description: string;
+  highlights: string[];
+  tags: TextAndPriority[];
+  date: {
+    from: string;
+    to: string;
+  };
+};
+
+export const data: DataRow[] = [
   {
-    role: "Senior fullstack developer",
+    role: "Senior fullstack",
     company: "Karma",
     short_description:
       "I worked mostly with establishing microservices patterns across our teams, but also with frontend the design system, testing, improving team processes and cross-team communication with sales and operations.",
@@ -16,23 +30,25 @@ export const data = [
       "Helped improve our hiring process with feedback from the local programming community, reducing the time it took for candidates to do our code case, and increasing the candidate's impression of our on-site pair/mob-programming session."
     ],
     tags: [
-      "microservices",
-      "node.js",
-      "rxjs",
-      "typescript",
-      "react",
-      "postgres",
-      "tdd",
-      "event_sourcing",
-      "cqrs",
-      "io_ts",
-      "gcp",
-      "mob_programming",
-      "user_story_mapping",
-      "event_storming",
-      "design_systems",
-      "rabbitmq",
-      "google_pubsub"
+      ["microservices", 1],
+      ["rxjs", 1],
+
+      ["tdd", 2],
+      ["typescript", 1],
+      ["event_sourcing", 2],
+
+      ["cqrs", 2],
+      ["node.js", 1],
+      ["io-ts", 2],
+      ["gcp", 2],
+      ["mob_programming", 2],
+      ["postgres", 1],
+      ["user_story_mapping", 2],
+      ["event_storming", 2],
+      ["react", 1],
+      ["design_systems", 2],
+      ["rabbitmq", 2],
+      ["google_pubsub", 1]
     ],
     date: {
       from: "2017-09-01",

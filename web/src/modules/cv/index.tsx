@@ -22,9 +22,8 @@ export const cvFactory: CvFactory = () => {
           <Card>
             <Role role={row.role} />
             <Tags tags={row.tags} />
-            <Company company={row.company} />
-
             <ShortDescription shortDescription={row.short_description} />
+            <Company company={row.company} />
           </Card>
         ))}
       </>
