@@ -9,7 +9,11 @@ export const useStream: UseStream = (stream, initialState) => {
   useEffect(() => {
     const sub = stream.subscribe(x => setState(x));
 
-    return () => sub.unsubscribe();
+    return () => {
+      // TODO: Check when unsubscriptions really trigger.
+      console.log("UNSUB!");
+      sub.unsubscribe();
+    };
   }, []);
 
   return state;

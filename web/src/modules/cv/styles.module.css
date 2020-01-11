@@ -1,3 +1,10 @@
+.cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .company_wrapper {
   width: 100%;
   display: flex;
@@ -30,7 +37,7 @@
   width: calc(100% + 25px);
   background: #fdd83c;
   position: absolute;
-  box-shadow: 3px 0px 3px black;
+  box-shadow: 3px 3px 3px black;
   z-index: -1;
 }
 
@@ -85,10 +92,26 @@ li.tag {
 }
 
 .highlights {
-  margin: 15px 10px;
   text-align: justify;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 720px;
 }
 
 .highlight {
   margin: 15px 0;
+  padding: 5px;
+  background: white;
+  box-shadow: 3px 3px 3px black;
+}
+
+.highlights_view {
+  margin: 15px 0;
+  font-size: 20px;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  width: 300px;
+  box-shadow: 3px 3px 3px black;
+  background: rgba(253, 216, 60, 1);
 }

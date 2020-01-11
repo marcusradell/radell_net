@@ -26,7 +26,7 @@ export const data: DataRow[] = [
       "Assisting our buyers-side team with regular code reviews, discussing arcchitectual choices and recommending future improvements.",
       "Helped introduce typescript, user story mapping, event storming, and mob programming by hosting weekly practice sessions.",
       "Helped improve our hiring process with feedback from the local programming community, reducing the time it took for candidates to do our code case, and increasing the candidate's impression of our on-site pair/mob-programming session.",
-      "Assist with onboarding new employees to make sure they "
+      "Assist with onboarding new employees to make sure they thrive at the company."
     ],
     tags: [
       ["microservices", 1],
