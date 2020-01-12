@@ -18,10 +18,13 @@ export const data: DataRow[] = [
     company: "Karma",
     short_description: "Zero food waste generation.",
     highlights: [
-      "Lead our work on the ambassador portal frontend. I implemented reusable themes and helped raised awareness of async state management (loading and error states) in our components by collaborating with our designers.",
-      "Lead developer on our event system using RabbitMQ and later Google Pub/Sub. Wrote wrappers that enabled RPC calls, created TypeScript types for pub/sub before the official ones stabilized, benchmarked performance and gave recommendations to our teams based on findings.",
-      "Lead developer on the payouts service, reducing our process from days of manual labor to a couple of minutes. The system complexity was reduced by building it in separate modules, making it simple to split into microservices. Incrementally rewrote the reports from html string to React components via serverside rendering to make it simpler to scale to multiple languages.",
-      "Lead developer on our product registry service. Incrementally introduced event sourcing and CQRS via Google pub/sub and Postgres, with at-least-once event publishing guarantees and concurrency protection via event versioning with a lot of expert help from the ES/DDD/CQRS community. Introduced programmatic migrations and randomized seeding via our API, making sure that the service was easy to get started with and to load test the write - and read -model. Worked closely with the ops team to setup alive/readiness checks for Kubernetes, graceful shutdown, and above 90% test coverage.",
+      "Lead our work on the ambassador portal frontend where we implemented our first design system.",
+      "Took lead on stabilizing RabbitMQ, and later migrate to Google Pub/Sub across our teams.",
+      "Implemented our automated payouts service in collaboration with our CTO and CPO, reducing the manual work from 20 hours to 15-30 minutes.",
+      "Implemented our product registry service as our first microservice with isolated database and at-least-once message guarantees.",
+      "Incrementally introduced event sourcing and CQRS via Google pub/sub and Postgres, with at-least-once event publishing guarantees and concurrency protection via event versioning with a lot of expert help from the ES/DDD/CQRS community.",
+      "Introduced programmatic migrations and randomized seeding via our API, making sure that the service was easy to get started with and to load test the write - and read -model.",
+      "Worked closely with our ops team to setup alive/readiness checks for Kubernetes, graceful shutdown, and above 90% test coverage.",
       "Help coordinate our cross-team on-call system. Making sure that on-call was covered, and on-boarding new employees",
       "Assisting our buyers-side team with regular code reviews, discussing arcchitectual choices and recommending future improvements.",
       "Helped introduce typescript, user story mapping, event storming, and mob programming by hosting weekly practice sessions.",
@@ -69,14 +72,15 @@ export const data: DataRow[] = [
       ["scrum", 1],
       ["testing", 1],
       ["redux", 1],
+      ["redux-thunk", 1],
       ["node.js", 2],
       ["rxjs", 2],
       ["open_source", 2]
     ],
     highlights: [
       "Coached our tester to learn integration testing in JavaScript.",
-      "Helped structure GraphQL in a modular way (before schema stitching).",
-      "Codeveloped our frontend service layer."
+      "Led development on our frontend service layer and how it communicated with our server APIs.",
+      "Helped structure our first GraphQL server API in a modular way (before schema stitching)."
     ]
   },
   {
