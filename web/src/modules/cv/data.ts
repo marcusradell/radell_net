@@ -149,9 +149,23 @@ export const data: DataRow[] = [
     },
     tags: [
       ["javascript", 1],
-      ["angular", 1]
+      ["angular", 1],
+      ["bootstrap", 1],
+      ["animate.css", 1],
+      ["css", 1],
+      ["tdd", 2],
+      ["functional_programming", 2],
+      ["mssql", 2],
+      ["asp.net", 2]
     ],
-    highlights: []
+    highlights: [
+      "Made my first two mobile web apps with Angular and bootstrap.",
+      "Integrated Angular with a jQuery-based calendar.",
+      "Worked closely with stakeholders by presenting cost/benefit analysis and recommending next step for the apps.",
+      "Learned about pure functions, applied it to the apps I built, heavily reducing complexity and bugs.",
+      "Established a reputation in the company for building 'bug free' apps.",
+      "Did my first late-Friday release on a huge project."
+    ]
   },
   {
     role: "Fullstack developer",
@@ -161,23 +175,51 @@ export const data: DataRow[] = [
       to: [2013, 8]
     },
     short_description: "First time leading a team.",
-    tags: [],
-    highlights: []
+    tags: [
+      ["c#", 1],
+      ["sharepoint", 1],
+      ["javascript", 1],
+      ["css", 2],
+      ["xml", 2],
+      ["mvvm", 2],
+      ["silverlight", 2],
+      ["wpf", 2],
+      ["windows_phone", 2]
+    ],
+    highlights: [
+      "Helped team improve their scrum processes by bookkeeping non-measured activities.",
+      "Lead a team of 3 interns, acting as scrum master and project leader.",
+      "Introduced rotating leadership where the interns got to practice leading scrum.",
+      "Managed external stakeholder expectations by setting up a behavior-driven design document, reducing communication incidents.",
+      "Worked with military-based timezone convertions in JavaScript.",
+      "Learned model-view-viewmodel and explored Silverlight and WPF, which would benefit me later on in Angular."
+    ]
   },
   {
     role: "Junior developer",
     company: "Iptor",
     dates: { from: [2010, 1], to: [2011, 3] },
     short_description: ".NET and green screen programming.",
-    tags: [],
+    tags: [
+      ["c#", 2],
+      [".net", 2],
+      ["as400", 2]
+    ],
     highlights: []
   },
   {
     role: "Junior developer",
     company: "CAG Mälardalen",
     dates: { from: [2008, 8], to: [2009, 1] },
-    short_description: "My first job!",
-    tags: [],
+    short_description: "My first programming job!",
+    tags: [
+      ["java", 2],
+      ["e-commerce", 2],
+      ["php", 2],
+      ["html", 2],
+      ["css", 2],
+      ["mysql", 2]
+    ],
     highlights: []
   }
 ];

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.module.css";
+import s from "./styles.module.css";
 import { profileFactory } from "../profile";
 import { notificationFactory } from "../notification";
 import { cvFactory } from "../cv";
@@ -23,9 +23,11 @@ export const appFactory = () => {
   const view: React.FC = () => (
     <>
       <notification.View />
-      <div className={styles.app}>
+      <div className={s.app}>
         <profile.View />
-        <cv.View />
+        <div className={s.section}>
+          <cv.View />
+        </div>
       </div>
     </>
   );

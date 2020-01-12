@@ -22,7 +22,7 @@ export const cvFactory: CvFactory = () => {
       <div className={s.cv}>
         <Title title="Curriculum Vitae" />
         {data.map((row, i) => (
-          <div key={i} style={{ marginTop: "30px" }}>
+          <div key={i} style={{ marginBottom: "30px" }}>
             <Card>
               <Role role={row.role} />
               <ShortDescription shortDescription={row.short_description} />
