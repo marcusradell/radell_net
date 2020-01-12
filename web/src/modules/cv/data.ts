@@ -25,7 +25,7 @@ export const data: DataRow[] = [
       "Incrementally introduced event sourcing and CQRS via Google pub/sub and Postgres, with at-least-once event publishing guarantees and concurrency protection via event versioning with a lot of expert help from the ES/DDD/CQRS community.",
       "Introduced programmatic migrations and randomized seeding via our API, making sure that the service was easy to get started with and to load test the write - and read -model.",
       "Worked closely with our ops team to setup alive/readiness checks for Kubernetes, graceful shutdown, and above 90% test coverage.",
-      "Help coordinate our cross-team on-call system. Making sure that on-call was covered, and on-boarding new employees",
+      "Help coordinate our cross-team on-call system. Making sure that on-call was covered, and on-boarding new employees.",
       "Assisting our buyers-side team with regular code reviews, discussing arcchitectual choices and recommending future improvements.",
       "Helped introduce typescript, user story mapping, event storming, and mob programming by hosting weekly practice sessions.",
       "Helped improve our hiring process with feedback from the local programming community, reducing the time it took for candidates to do our code case, and increasing the candidate's impression of our on-site pair/mob-programming session.",
