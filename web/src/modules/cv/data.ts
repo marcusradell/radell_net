@@ -16,7 +16,7 @@ export const data: DataRow[] = [
   {
     role: "Senior fullstack",
     company: "Karma",
-    short_description: "Reducing food waste.",
+    short_description: "Zero food waste generation.",
     highlights: [
       "Lead our work on the ambassador portal frontend. I implemented reusable themes and helped raised awareness of async state management (loading and error states) in our components by collaborating with our designers.",
       "Lead developer on our event system using RabbitMQ and later Google Pub/Sub. Wrote wrappers that enabled RPC calls, created TypeScript types for pub/sub before the official ones stabilized, benchmarked performance and gave recommendations to our teams based on findings.",
@@ -29,26 +29,26 @@ export const data: DataRow[] = [
       "Assist with onboarding new employees to make sure they thrive at the company."
     ],
     tags: [
-      ["open_source", 2],
       ["microservices", 1],
-      ["rxjs", 1],
-      ["tdd", 2],
+      ["node.js", 1],
+      ["postgres", 1],
+      ["react", 1],
       ["typescript", 1],
+      ["rxjs", 1],
+      ["agile", 1],
+      ["google_pubsub", 1],
+      ["lean", 1],
+      ["gcp", 2],
+      ["rabbitmq", 2],
+      ["io-ts", 2],
+      ["open_source", 2],
+      ["tdd", 2],
       ["event_sourcing", 2],
       ["cqrs", 2],
-      ["node.js", 1],
-      ["io-ts", 2],
-      ["agile", 1],
-      ["gcp", 2],
       ["mob_programming", 2],
-      ["postgres", 1],
       ["user_story_mapping", 2],
       ["event_storming", 2],
-      ["react", 1],
-      ["design_systems", 2],
-      ["rabbitmq", 2],
-      ["google_pubsub", 1],
-      ["lean", 1]
+      ["design_systems", 2]
     ],
     dates: {
       from: [2017, 9],
@@ -62,17 +62,16 @@ export const data: DataRow[] = [
       from: [2016, 11],
       to: [2017, 8]
     },
-    short_description: "Food bag subscriptions.",
+    short_description: "Quality food bag subscriptions.",
     tags: [
       ["react", 1],
       ["javascript", 1],
-      ["node.js", 2],
-      ["rxjs", 2],
       ["scrum", 1],
       ["testing", 1],
-      ["open_source", 2],
       ["redux", 1],
-      ["pair_programming", 1]
+      ["node.js", 2],
+      ["rxjs", 2],
+      ["open_source", 2]
     ],
     highlights: [
       "Coached our tester to learn integration testing in JavaScript.",
@@ -87,15 +86,16 @@ export const data: DataRow[] = [
       from: [2015, 5],
       to: [2016, 5]
     },
-    short_description: "Fintech invoice portal.",
+    short_description: "Visionary freemium invoice portal.",
     tags: [
-      ["angular", 2],
-      ["react", 2],
+      ["management", 1],
+      ["scrum", 1],
       ["aws", 1],
       ["node.js", 1],
-      ["rxjs", 2],
-      ["scrum", 1],
-      ["management", 1]
+      ["tdd", 2],
+      ["angular", 2],
+      ["react", 2],
+      ["rxjs", 2]
     ],
     highlights: [
       "Managed consultants to make sure they deliver on time and budget while maintaining quality.",

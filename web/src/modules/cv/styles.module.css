@@ -106,7 +106,7 @@ li.tag {
   width: 300px;
   box-shadow: 3px 3px 3px black;
   color: black;
-  background: transparent;
+  background: rgba(100, 200, 100, 0.5);
 }
 
 .highlights_view:active {

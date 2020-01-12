@@ -14,5 +14,10 @@ export const Dates: React.FC<Props> = ({ to, from }) => {
   }
   const yearsWithMonthDecimal = (years + months / 12).toFixed(1);
 
-  return <div className={s.dates}>{yearsWithMonthDecimal}y</div>;
+  return (
+    <div className={s.dates}>
+      {yearsWithMonthDecimal}
+      <span style={{ marginLeft: 2 }}>yr</span>
+    </div>
+  );
 };
