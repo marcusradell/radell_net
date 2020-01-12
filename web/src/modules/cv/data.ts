@@ -29,16 +29,16 @@ export const data: DataRow[] = [
       "Assist with onboarding new employees to make sure they thrive at the company."
     ],
     tags: [
+      ["open_source", 2],
       ["microservices", 1],
       ["rxjs", 1],
-
       ["tdd", 2],
       ["typescript", 1],
       ["event_sourcing", 2],
-
       ["cqrs", 2],
       ["node.js", 1],
       ["io-ts", 2],
+      ["agile", 1],
       ["gcp", 2],
       ["mob_programming", 2],
       ["postgres", 1],
@@ -47,11 +47,110 @@ export const data: DataRow[] = [
       ["react", 1],
       ["design_systems", 2],
       ["rabbitmq", 2],
-      ["google_pubsub", 1]
+      ["google_pubsub", 1],
+      ["lean", 1]
     ],
     dates: {
       from: [2017, 9],
       to: [2019, 10]
     }
+  },
+  {
+    role: "Senior frontend",
+    company: "Linas matkasse",
+    dates: {
+      from: [2016, 11],
+      to: [2017, 8]
+    },
+    short_description: "Food bag subscriptions.",
+    tags: [
+      ["react", 1],
+      ["javascript", 1],
+      ["node.js", 2],
+      ["rxjs", 2],
+      ["scrum", 1],
+      ["testing", 1],
+      ["open_source", 2],
+      ["redux", 1],
+      ["pair_programming", 1]
+    ],
+    highlights: [
+      "Coached our tester to learn integration testing in JavaScript.",
+      "Helped structure GraphQL in a modular way (before schema stitching).",
+      "Codeveloped our frontend service layer."
+    ]
+  },
+  {
+    role: "Lead backend",
+    company: "Qvalia",
+    dates: {
+      from: [2015, 5],
+      to: [2016, 5]
+    },
+    short_description: "Fintech invoice portal.",
+    tags: [
+      ["angular", 2],
+      ["react", 2],
+      ["aws", 1],
+      ["node.js", 1],
+      ["rxjs", 2],
+      ["scrum", 1],
+      ["management", 1]
+    ],
+    highlights: [
+      "Managed consultants to make sure they deliver on time and budget while maintaining quality.",
+      "Heavily reduced our backlog and help set clearer priority based on input from our CEO.",
+      "Set coding guidelines for how to work with promises and thin controllers in the backend.",
+      "Help debug the Sails open source framework and resolve issues."
+    ]
+  },
+  {
+    role: "JavaScript developer",
+    company: "Utvecklarbolaget",
+    dates: {
+      from: [2014, 8],
+      to: [2015, 5]
+    },
+    short_description: "Expert Angular consulting.",
+    tags: [],
+    highlights: []
+  },
+  {
+    role: "Fullstack developer",
+    company: "R2M",
+    short_description: "Angular and .NET.",
+    dates: {
+      from: [2013, 8],
+      to: [2014, 6]
+    },
+    tags: [],
+    highlights: []
+  },
+  {
+    role: "Fullstack developer",
+    company: "DQC",
+    dates: {
+      from: [2011, 3],
+      to: [2013, 8]
+    },
+    short_description: "Sharepoint intranets.",
+    tags: [],
+    highlights: []
+  },
+  {
+    role: "Junior developer",
+    company: "Iptor",
+    dates: { from: [2010, 1], to: [2011, 3] },
+    short_description: ".NET and green screen programming.",
+    tags: [],
+    highlights: []
+  },
+  {
+    role: "Junior developer",
+    company: "CAG Mälardalen",
+    dates: { from: [2008, 8], to: [2009, 1] },
+    short_description: "Various smaller tasks.",
+    tags: [],
+    highlights: []
   }
 ];
