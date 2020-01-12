@@ -5,7 +5,7 @@
 
 .notification {
   opacity: var(--opacity);
-  position: absolute;
+  position: fixed;
   left: calc(50vw - 125px);
   bottom: var(--bottom);
   z-index: 100;
