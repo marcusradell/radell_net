@@ -111,14 +111,14 @@ export const data: DataRow[] = [
       from: [2014, 8],
       to: [2015, 5]
     },
-    short_description: "Expert Angular consulting.",
+    short_description: "Bye .NET, hello node.js.",
     tags: [],
     highlights: []
   },
   {
     role: "Fullstack developer",
     company: "R2M",
-    short_description: "Angular and .NET.",
+    short_description: "This is where I became awesome!",
     dates: {
       from: [2013, 8],
       to: [2014, 6]
@@ -133,7 +133,7 @@ export const data: DataRow[] = [
       from: [2011, 3],
       to: [2013, 8]
     },
-    short_description: "Sharepoint intranets.",
+    short_description: "First time leading a team.",
     tags: [],
     highlights: []
   },
@@ -149,7 +149,7 @@ export const data: DataRow[] = [
     role: "Junior developer",
     company: "CAG Mälardalen",
     dates: { from: [2008, 8], to: [2009, 1] },
-    short_description: "Various smaller tasks.",
+    short_description: "My first job!",
     tags: [],
     highlights: []
   }
