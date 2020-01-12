@@ -11,7 +11,7 @@ export const Highlights: React.FC<Props> = ({ highlights }) => {
   return isOpen ? (
     <>
       <button className={s.highlights_view} onClick={() => setOpen(false)}>
-        Close highlights
+        ❌ Close highlights
       </button>
       <div className={s.highlights}>
         {highlights.map((h, i) => (
@@ -21,12 +21,12 @@ export const Highlights: React.FC<Props> = ({ highlights }) => {
         ))}
       </div>
       <button className={s.highlights_view} onClick={() => setOpen(false)}>
-        Close highlights
+        ❌ Close highlights
       </button>
     </>
   ) : highlights.length > 0 ? (
     <button className={s.highlights_view} onClick={() => setOpen(true)}>
-      View {highlights.length} highlights
+      ⭐ View {highlights.length} highlights
     </button>
   ) : null;
 };
