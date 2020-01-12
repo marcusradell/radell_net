@@ -32,6 +32,7 @@ export const data: DataRow[] = [
       "Assist with onboarding new employees to make sure they thrive at the company."
     ],
     tags: [
+      ["javascript", 1],
       ["microservices", 1],
       ["node.js", 1],
       ["postgres", 1],
@@ -67,8 +68,8 @@ export const data: DataRow[] = [
     },
     short_description: "Quality food bag subscriptions.",
     tags: [
-      ["react", 1],
       ["javascript", 1],
+      ["react", 1],
       ["scrum", 1],
       ["testing", 1],
       ["redux", 1],
@@ -116,8 +117,27 @@ export const data: DataRow[] = [
       to: [2015, 5]
     },
     short_description: "Bye .NET, hello node.js.",
-    tags: [],
-    highlights: []
+    tags: [
+      ["javascript", 1],
+      ["angular", 1],
+      ["promises", 1],
+      ["lodash", 1],
+      ["css", 1],
+      ["gulp", 1],
+      ["browserify", 1],
+      ["node.js", 2],
+      ["pair_programming", 2],
+      ["tdd", 2],
+      ["heroku", 2]
+    ],
+    highlights: [
+      "Created my own gulp + browserify starter kit, publishing it on npm so it was easy to bundle code and get live reload.",
+      "Applied MVVM patterns to Angular and wrote reusable components, making code easier for non-angular developers to understand.",
+      "Wrote a prototype framework in Angular and node.js which traversed Expressen's HATEOAS API using bluebird Promises.",
+      "Worked with styling Expressen's login experience, collaborating with multiple teams.",
+      "Translated data from legacy APIs to fit the next gen frontend by using lodash to group, map, and reduce statistical data and then visualize with graphs.",
+      "Used Heroku to quickly develop and deploy conceptual Angular components with mock data, making it easier for stakeholders to give feedback."
+    ]
   },
   {
     role: "Fullstack developer",
@@ -127,7 +147,10 @@ export const data: DataRow[] = [
       from: [2013, 8],
       to: [2014, 6]
     },
-    tags: [],
+    tags: [
+      ["javascript", 1],
+      ["angular", 1]
+    ],
     highlights: []
   },
   {
