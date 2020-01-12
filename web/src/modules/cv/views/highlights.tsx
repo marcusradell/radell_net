@@ -24,9 +24,9 @@ export const Highlights: React.FC<Props> = ({ highlights }) => {
         Close highlights
       </button>
     </>
-  ) : (
+  ) : highlights.length > 0 ? (
     <button className={s.highlights_view} onClick={() => setOpen(true)}>
-      View {s.highlights.length} highlights
+      View {highlights.length} highlights
     </button>
-  );
+  ) : null;
 };
