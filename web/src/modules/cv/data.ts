@@ -207,7 +207,7 @@ export const data: DataRow[] = [
       ["html", 2],
       ["as400", 2]
     ],
-    highlights: []
+    highlights: ["Did UX study on OKQ8's internal system with user interviews."]
   },
   {
     role: "Junior developer",
@@ -222,6 +222,9 @@ export const data: DataRow[] = [
       ["css", 2],
       ["mysql", 2]
     ],
-    highlights: []
+    highlights: [
+      "I created routines for weekly and semi-daily check-ins where I wrote down questions and tasks on paper.",
+      "While studying PHP and MySQL, I created a basic static site generator that parsed text files (markdown-ish) into html elements and routed based on file paths."
+    ]
   }
 ];
