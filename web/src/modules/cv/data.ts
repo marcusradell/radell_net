@@ -203,6 +203,8 @@ export const data: DataRow[] = [
     tags: [
       ["c#", 2],
       [".net", 2],
+      ["css", 2],
+      ["html", 2],
       ["as400", 2]
     ],
     highlights: []
